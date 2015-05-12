@@ -1,2 +1,1 @@
-feature.js
-console.log("Prospy")
+console.log("Prosper")
