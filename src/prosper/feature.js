@@ -1,2 +1,2 @@
 feature.js
-console.log("Prosper")
+console.log("Prospy")
