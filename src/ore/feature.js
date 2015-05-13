@@ -1,1 +1,1 @@
-console log ("Ore Olarewaju");
+console.log("Ore Olarewaju");
