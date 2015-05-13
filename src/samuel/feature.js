@@ -11,3 +11,12 @@ null - unidentified
 "pi" - string
 67 + 18 - number
 */
+
+//Activity 3
+ var countBs = function (protein) {
+ 	var number = 0;
+ 	for (var i = 0; i < protein.length; i++) {
+ 		if (intro.charAt(i) === "B"){
+ 			number++;
+ 		}
+
