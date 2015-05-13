@@ -46,3 +46,32 @@ var decToBin = function(decValue){
 	 	}
 return binValue;
 };
+
+/*****************************
+ACTIVITY THREE
+*****************************/
+
+var countBs = function(word){
+	var letterCount = 0;
+	for(var i = 0; i < word.length; i++){
+		if(word.charAt(i) === 'B')
+			letterCount++;
+	}
+return letterCount;
+}
+
+var countChar = function(word, character){
+	var letterCount = 0;
+	for(var i = 0; i < word.length; i++){
+		if(word.charAt(i) === character)
+			letterCount++;
+	}
+return letterCount;	
+}
+
+
+//rewritting countBs to use countChar
+
+var countBs = function(word){
+	return countChar(word,'B');
+}
