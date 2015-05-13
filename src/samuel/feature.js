@@ -45,5 +45,25 @@ function DecimalToBinary(DecimalValue){
 		return DecimalValue;
 	};
 
+
 	//ASSIGNMENT 3
-	
+	var countBs = function(proteins) {
+	var num = 0;
+	for (var i = 0; i < proteins.length; i++){
+		if (proteins.charAt(i) === "B"){
+			num ++;
+		}
+	} console.log(num)
+}
+countBs("My Best Food")
+
+var countChar = function (proteins, checkthis){
+var num = 0;
+	for (var i = 0; i < proteins.length; i++){
+		if (proteins.charAt(i) === checkthis){
+			num ++;
+		} 
+
+	} console.log(num)
+}
+countChar("My Best Food", "m");
