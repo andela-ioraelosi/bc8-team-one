@@ -1,2 +1,1 @@
-feature.js
-console.log ("Habeeb")
+console.log ("Habeeb");
