@@ -15,7 +15,7 @@ null = undefined
 
 
  
- //function converts decimals to binary
+ //function converts decimals to binary (activity 2)
  var binaryConverter = function(number){
 	
 var reverseNumber = [];
@@ -31,4 +31,38 @@ var reverseNumber = [];
 
 }
 
-//binaryConverter(50);
+binaryConverter(50);
+
+//Activity 3
+countChar = function (string, letter)
+{
+	var letter = letter;
+  var counter = 0;
+  for (var i = 0; i < (string.length); i++)
+    {
+      if (string.charAt(i) === letter)
+        {
+          counter++;
+        }
+    }
+  
+  return counter;
+}
+
+countBs = function (string)
+{
+  var letter = "B";
+  var count = 0;
+  for (var i = 0; i < (string.length); i++)
+    {
+      if (string.charAt(i) === letter)
+        {
+          count++;
+        }
+    }
+  
+  return count;
+}
+
+console.log(countBs("BABAA"));
+console.log(countChar("Bbazzzooookkkkka", "a"));
