@@ -12,55 +12,46 @@ null -------- undefined
 67+18 ------- function
 */
 
+
+
 //convert number to base 2
 var base2converter = function(number) {
-	var i= parseInt(number, 10).toString(2);
-	console.log(i)
+	var i = parseInt(number, 10).toString(2);
+	return(i)
 
 }
 base2converter(60);
 
+var score = 180;
+printGrade = function(score) {
 
-var score= 180;
-printGrade= function(score) {
-
-	if ( (score <=100) && (score >= 0)) {
+	if ( (score <= 100) && (score >= 0)) {
 		if(score >= 70) {
-			console.log(score+" is A")
+			return(score+" is A")
 
 		} else if (score >= 50) {
-			console.log(score+" is B")
+			return(score+" is B")
 
 		} else {console.log(score+" is C")}
 
 	}
     else {
-    	console.log ("Enter Valid number")
+    	return ("Enter Valid number")
 }
 }
 printGrade(100)
 
+var score = 180;
 
-var score= 180;
 
 
-FizzBuzz = function(number) {
-
-    if ( number % 3 === 0 && number % 5 === 0) {
-        return "FizzBuzz"
-    }
-  else if (number % 3 === 0)
-  {
-        return "Fizz"
-  }
-  else if (number % 5 === 0) 
-  {
-        return "Buzz"
-  }
-  else 
-  {
-        return number
-  }
-};
- 
-FizzBuzz(180)
+countB = function(string, letter) {
+    var count = 0;
+    for (var i = 0; i< string.length; i++) {
+        if(string.charAt(i) == letter) {
+            ++count;            
+            }
+          }
+     return(count)
+    };
+countB("We count Bs and bs", "B")
