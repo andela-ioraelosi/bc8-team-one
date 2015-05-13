@@ -44,22 +44,23 @@ printGrade(100)
 var score= 180;
 
 
-FizzBuzz= function(number) {
+FizzBuzz = function(number) {
 
-	if ( number % 3 == 0 && number % 5 == 0) {
-		console.log("FizzBuzz")
-	}
-    else if (number % 3 == 0)
-    {
-    	console.log ("Fizz")
+    if ( number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz"
     }
-    else if ( (number %3 !== 0) && (number % 5 === 0) ) 
-    {
-    	console.log("Buzz")
-    }
-    else {
-    	console.log(number)
-    }
+  else if (number % 3 === 0)
+  {
+        return "Fizz"
+  }
+  else if (number % 5 === 0) 
+  {
+        return "Buzz"
+  }
+  else 
+  {
+        return number
+  }
 };
  
 FizzBuzz(180)
