@@ -1,0 +1,13 @@
+Activity One (data types)
+=========================
+What data type:
+
+1. 14 = number
+2. -80 = number
+3. 8.5 = number
+4. true = boolean
+5. (5<17) = boolean
+6. null = undefined
+7. 3.142 = number
+8. 'pi' = string
+9. 67+18 = number
