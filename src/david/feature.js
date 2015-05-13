@@ -24,7 +24,7 @@ base2converter(60);
 var score= 180;
 printGrade= function(score) {
 	 
-if ( (score <=100) && (score >= 0)) {
+if ( (score <= 100) && (score >= 0)) {
 	if (score >= 70) {
 	console.log(score+" is A")
 
@@ -42,7 +42,7 @@ else {
 printGrade(180)
 
 //B Counter
-countB = function(string) {
+var countB = function(string) {
     var count = 0;
     for (var i=0; i< string.length; i++) {
         if(string.charAt(i) == "B") {
@@ -54,7 +54,7 @@ countB = function(string) {
 countB("We count BBs and bs")
 
 //countChar
-countChar = function(string, letter) {
+var countChar = function(string, letter) {
     var count = 0;
     for (var i=0; i< string.length; i++) {
         if(string.charAt(i) == letter) {
@@ -69,7 +69,7 @@ countChar("We count Characters and characters", "c")
 
 
 //FizzBuzz test
-FizzBuzz = function(number) {
+var FizzBuzz = function(number) {
 	if (number % 3 === 0) {
 		if (number % 5 === 0) {
 			console.log("FizzBuzz")
