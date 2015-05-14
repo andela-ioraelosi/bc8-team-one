@@ -103,4 +103,23 @@ var numberOfSequence = function(n){
 	
 }
 
-console.log(numberOfSequence(6));
+console.log(numberOfSequence(8));
+
+// TOSIN'S SIMPLE SOLUTION
+
+var fibo = function(num){
+	var sequence = [];
+	var p = 1;
+	var c = 1;
+	var n;
+	for(var i = 0; i < num; i++ )
+	{
+		n = p+c;
+		p = c;
+		c = n;
+		sequence.push(n);
+	}
+	return sequence;
+}
+
+console.log(fibo(8));
