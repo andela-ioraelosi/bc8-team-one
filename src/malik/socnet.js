@@ -1,1 +1,1 @@
-socnet.js
+console.log("Abdulmalik Yusuf");
