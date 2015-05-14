@@ -67,3 +67,15 @@ for ( var i = sequence.length; i <= 10; i++) {
 	sequence[i] = sequence[i-2] + sequence [i-1]
 }
 console.log (sequence)
+
+////////////////////////////
+// factorial lab
+factorial = function (number) {
+  if (number === 0) {
+    return 1;
+  }
+  else{
+    return number *= factorial(number-1)
+  }
+}
+
