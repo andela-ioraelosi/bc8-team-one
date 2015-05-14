@@ -73,17 +73,36 @@ var countBs2 = function(word) {
 }
 
 
-var sequence = function(n) {
+var fiboSequence = function(number) {
 
-	var i=0, result = [2, 3]; 
+	var i = 0;
+	var result = [2, 3]; 
 	
-	while (i < n-2) {
+	while (i < number- 2) {
 
-		var len=result.length, x=len-2, y=len-1; 
+		var len = result.length;
+		x = len - 2;
+		y = len - 1; 
 
-		result.push(result[x]+ result[y])
-		
+		result.push(result[x] + result[y])
+
 		i++
 	}
-	return result
+
+	return result;
+};
+
+var factorial = function(number) {
+
+	var result = 1;
+
+	while (number > 0) {
+
+		result *= number;
+		number--;
+		factorial(number);
+
+	}
+
+	return result;
 }
