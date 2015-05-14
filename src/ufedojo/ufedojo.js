@@ -85,7 +85,7 @@ var fibonacci = function(seqLength) {
 		return sequence[0];
 	}
 	else if(seqLength == 2){
-		return sequence[2,3] ;
+		return [2,3] ;
 	}
 	else{
 		for(var i = 3; i <= seqLength; i++){
