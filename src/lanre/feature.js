@@ -66,3 +66,16 @@ countBs = function (string)
 
 console.log(countBs("BABAA"));
 console.log(countChar("Bbazzzooookkkkka", "a"));
+
+//activity 4 fibernacci
+
+var numItems= function(num){
+  var number =[2,3]
+  for (var i= 0;i < (num-2); i++)
+  {
+    number.push(number[i]+number[i+1]);
+    
+  }
+  console.log(number);
+};
+numItems(prompt("enter a number"));
