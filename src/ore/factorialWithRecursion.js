@@ -1,3 +1,4 @@
+//Factorial with Recursion
 function factorial (number){
   if (number === 0)
     return 1;
