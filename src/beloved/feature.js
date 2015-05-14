@@ -13,7 +13,7 @@ console.log ("Habeeb");
 //question
 //write a program to produce binary values from decimals
 
-var binaryConverter = function(number){
+/*var binaryConverter = function(number){
         var reverseBinary = [];
         do{
                 reverseBinary.push(number%2);
@@ -41,7 +41,7 @@ countBs ("Blah Blah Blah")
 /*next, write a function called countchar that behaves like countBs, except it takes a second arguement that indicates the 
 character that is to be counted (rather than counting only uppercase "B" characters) rewrute countBs to make use of this new*/
 
-var countChar = function ( count , testCharacter) {
+/*var countChar = function ( count , testCharacter) {
 	var number = 0
 	for (var i = 0; i < count.length; i++){
 		if (intro.charAt(i) === testCharacter){
@@ -54,4 +54,16 @@ countChar("Blah Blah Blah" , "a");
 var countBs = function(intro){
 	return countChar( intro, "B");
 }
-countBs("Blah Blah Blah")
+countBs("Blah Blah Blah")*/
+
+///////////////////////////////////
+
+//create a fibonacci sequence
+
+var sequence = [];
+sequence [0] = 2
+sequence [1] = 3
+for ( var i = sequence.length; i <= 10; i++) {
+	sequence[i] = sequence[i-2] + sequence [i-1]
+}
+console.log (sequence)
