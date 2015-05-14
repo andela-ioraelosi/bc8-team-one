@@ -79,3 +79,29 @@ var numItems= function(num){
   console.log(number);
 };
 numItems(prompt("enter a number"));
+
+// fibernacci recussively
+
+var fibo = function(num){
+  if (num ==0) return 0;
+  if (num ==1) return 1;
+  
+  return fibo(num-1) + fibo(num-2);
+    
+}
+
+var fibonacci = function(n){
+  for (var i=0;i<=n; i++){
+  console.log(fibo(i))
+}
+}
+fibonacci(8)
+
+//factorial recussively
+var factorial = function(number) {
+    if(number === 0) {
+        return 1
+    } else {
+        return number * factorial(number - 1);
+    }
+}
