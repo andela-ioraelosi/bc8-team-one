@@ -111,7 +111,7 @@ function factorial(n)
 	var loop, answer;
 	answer = 1;
 
-	for(loop=1;loop<=n;loop++)
+	for(loop = 1; loop <= n; loop++)
 	{
 
 		answer = answer * loop;		
