@@ -19,9 +19,6 @@ What data type:
 
 
 
-
-
-
 //Question: write a program to produce binary values from decimal.
 
 /*
@@ -30,11 +27,12 @@ Solution gotten from Josh's algorithm
 
 var binaryConverter = function(number){
 	var reverseBinary = [];
-	do{
-		reverseBinary.push(number%2);
-		number = Math.floor(number/2);
+	do {
+		reverseBinary.push(number % 2);
+		number = Math.floor(number / 2);
 		console.log(number);
-	}while(number>=1)
+	} while (number >= 1 )
+
 	return console.log(reverseBinary.reverse().join(''));
 }
 
@@ -45,33 +43,19 @@ var binaryConverter = function(number){
 
 
 
-
-
-
 // Question count Bs
-
-// OLD COUNT B FUNCTION
-/*
-var countBs = function(string){
-	var numberOfBs = 0;
-	if(typeof string !== 'string') return 'Please Enter only a string';
-	else {
-		for(var i=0; i<string.length; i++)
-		{
-			if(string.charAt(i)==='B') numberOfBs++;
-		}
-	}
-	return numberOfBs;
-}
-*/
 
 var countChar = function(string, testChar){
 	var numberOfChars = 0;
-	if(typeof string !== 'string') return 'Please Enter only a string';
-	else {
-		for(var i=0; i<string.length; i++)
+	if(typeof string !== 'string')
+	{
+		return 'Please Enter only a string';
+	}
+	else 
+	{
+		for(var i = 0; i < string.length; i++)
 		{
-			if(string.charAt(i)===testChar) numberOfChars++;
+			if(string.charAt(i) === testChar) numberOfChars++;
 		}
 	}
 	return numberOfChars;
@@ -82,4 +66,4 @@ var countBs = function(string){
 	return countChar(string, 'B');
 }
 
-console.log(countBs('BoBo'));
+console.log(countBs('Bobo'));
