@@ -55,3 +55,11 @@ var countB = function(string, letter) {
      return count
     };
 countB("We count Bs and bs", "B")
+
+
+
+function factorial(number) {
+    return (number <= 1) ? 1 : factorial(number - 1) * number;
+}
+
+factorial(4)
