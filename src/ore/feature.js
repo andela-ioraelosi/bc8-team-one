@@ -15,17 +15,17 @@ null = Undefined
 
 
 //Activity 2
-var binary = function (user){
-
-	var quotient = user;
+var binary = function (number){
+	var quotient = number;
 	var remainder = [];
 	do{
 		remainder.push (quotient % 2);
 		quotient = Math.floor(quotient / 2);
-		}
-	   while (quotient >= 1)
-	console.log(remainder.reverse().join(""));
-		}
+	}
+	   while (quotient >= 1){
+	   console.log(remainder.reverse().join(""));
+		 }
+}
 	
 		binary(200);
 		
@@ -64,5 +64,4 @@ function countBs(string)
 
 console.log(countBs("BABAbAbaB"));
 console.log(countChar("Bbazzzooookkkkka", "a"));
-
 
