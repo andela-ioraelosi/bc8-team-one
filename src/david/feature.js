@@ -15,7 +15,7 @@ null undefined
 //convert number to base 2 
 var base2converter = function(number) {
     var i= parseInt(number, 10).toString(2);
-    console.log(i);
+    return i;
 		
 }
 base2converter(60);
@@ -88,5 +88,18 @@ else {
 }
 
 FizzBuzz(7);
+
+//Finding the nth Number in FIb Series
+
+var findNth = function(nth) {
+    var a = 0, b = 1 ;
+    for(var i = 0; i <= n; i++) {
+        f = a + b;
+        a = b;
+        b = f;
+    }
+    return f;
+};
+
 
 
