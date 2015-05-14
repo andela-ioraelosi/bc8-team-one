@@ -1,0 +1,14 @@
+Activity One 
+
+Activity One (data types)
+=========================
+
+14 === Number
+-80 === Number
+8.5 === Number
+true === Boolean
+(5 < 17) === Boolean
+null === Undefined
+3.142 === Number
+'Pi' === String
+67+18 === Number
