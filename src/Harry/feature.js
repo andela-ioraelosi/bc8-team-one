@@ -74,13 +74,20 @@ for (var i=0 i< num; i++){
 
 	
 //recursive exercise
+
+//recursion exercise
 var factorial = function(numb) {
-    
-    if(i == numb); {
-        return numb{ 
-    else {
-    	      return numb *=i;
-    }
+
+	var result = 1;
+
+	while (numb > 0) {
+
+		result *= numb;
+		numb--;
+		factorial(numb);
+
+	}
+
+	return result;
 }
- 
 
