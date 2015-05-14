@@ -71,3 +71,19 @@ var countChar = function(word, character) {
 var countBs2 = function(word) {
 	return countChar(word, "B");										//call the function "countChar" with string "B" as the second input
 }
+
+
+var sequence = function(n) {
+
+	var i=0, result = [2, 3]; 
+	
+	while (i < n-2) {
+
+		var len=result.length, x=len-2, y=len-1; 
+
+		result.push(result[x]+ result[y])
+		
+		i++
+	}
+	return result
+}
