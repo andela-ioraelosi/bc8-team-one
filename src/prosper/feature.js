@@ -23,20 +23,17 @@ convertToBinary = function(x) {
 	while (x) {
 		 var remainder = x % 2;				//get modulus of x
 		 result.push(remainder);	 			//store the modulus in the result array
-		 x = (x/2) | 0;						//get the new value for x
+		 x = (x / 2) | 0;						//get the new value for x
 	} 
 	result.reverse();						// reverse the order of the array
 	return result.join("");					// join the elements of the array and return the result as string
 };
 
-console.log(convertToBinary(5));			//converts 5 from decimal to binary
-
-
 countBs = function(x) {
-	if (typeof(x) === "string" ) {
-		for (var i=0, max=x.length, count = 0; i<max; i++) {
-			if (x.charAt(i) === "B") {
-				count++;
+	if (typeof(x) === "string" ) {									//check for input type
+		for (var i = 0, len = x.length, count = 0; i < len; i++) {	//initialize variables
+			if (x.charAt(i) === "B") {								//check if the string contains 'B' character
+				count++;											//increment count
 			}
 		}
 		return count;
@@ -45,15 +42,12 @@ countBs = function(x) {
 	}
 };
 
-console.log(countBs("BBBdghjkBB"));
-
-
 
 countChar = function(x, y) {
-	if (typeof(x) === "string" && x.indexOf(y) !== -1) {
-		for (var i=0, max=x.length, count = 0; i<max; i++) {
-			if (x.charAt(i) === y) {
-				count++;
+	if (typeof(x) === "string" && x.indexOf(y) !== -1) {			//check that both inputs are string and y is in x
+		for (var i = 0, max = x.length, count = 0; i < max; i++) {	//initialize variables
+			if (x.charAt(i) === y) {									
+				count++;											//increment count
 			}
 		}
 		return count;
@@ -62,13 +56,8 @@ countChar = function(x, y) {
 	}
 };
 
-console.log(countChar("BBBdghjkBB", "j"));
-
-
-
 
 countBs2 = function(x) {
-	return countChar(x, "B");
+	return countChar(x, "B");										//call the function "countChar" with string "B" as the second input
 }
 
-console.log(countBs2("BBBdghjkBB"));
