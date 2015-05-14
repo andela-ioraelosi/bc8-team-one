@@ -20,7 +20,7 @@ var base2converter = function(number) {
 	return i;
 
 }
-var base2converter(60);
+base2converter(60);
 
 var score = 180;
 printGrade = function(score) {
