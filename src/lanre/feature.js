@@ -34,7 +34,7 @@ null = undefined
  binaryConverter(50);
 
  //Activity 3
- countChar = function (string, letter) {
+ var countChar = function (string, letter) {
      var letter = letter;
      var counter = 0;
      for (var i = 0; i < string.length; i++) {
@@ -46,7 +46,7 @@ null = undefined
      return counter;
  }
 
- countBs = function (string) {
+ var countBs = function (string) {
      var letter = "B";
      var count = 0;
      for (var i = 0; i < (string.length); i++) {
