@@ -1,7 +1,8 @@
 console.log("Awolumate Samuel");
 console.log("I am ThirdSamuel");
 
-/*14 - number
+ //Assignment One
+ 14 - number
 -80 - number
 8.5 - number
 true - boolean
@@ -10,7 +11,7 @@ null - unidentified
 3.142 - number
 "pi" - string
 67 + 18 - number
-*/
+
 
 //CONVERTING BINARY TO DECIMAL
 function DecimalToBinary(DecimalValue){
@@ -52,7 +53,7 @@ function DecimalToBinary(DecimalValue){
 
 
 	//ASSIGNMENT 3
-	/*var countBs = function(proteins) {
+	var countBs = function(proteins) {
 	var num = 0;
 	for (var i = 0; i < proteins.length; i++){
 		if (proteins.charAt(i) === "B"){
@@ -72,14 +73,15 @@ var num = 0;
 	} console.log(num)
 }
 countChar("My Best Food", "m");
-*/
+
+
 //Exercice 4
 
 var looping = function(nextnum) {
-    var a = b = 1; n = 2
+    var previousnum = currentnum = 1; fibo = 2
     for(var i = 0; i <= nextnum; i++) {
-        n = a + b; a = b; b = n;
-      console.log(n);
+        fibo = previousnum + currentnum; previousnum = currentnum; currentnum = fibo;
+      console.log(fibo);
     }
  
 };
@@ -88,6 +90,7 @@ var looping = function(nextnum) {
 
 
 //Exercise 5
+ 
 function factorial(num)
 {
     // If the number is less than 0, reject it.
