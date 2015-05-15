@@ -43,7 +43,7 @@ character that is to be counted (rather than counting only uppercase "B" charact
 var countChar = function ( count , testCharacter) {
 	var number = 0
 	for (var i = 0; i < count.length; i++){
-		if (intro.charAt(i) === testCharacter){
+		if (count.charAt(i) === testCharacter){
 			number ++;
 		}
 	} console.log(number)
@@ -53,7 +53,7 @@ countChar("Blah Blah Blah" , "a");
 var countBs = function(intro){
 	return countChar( intro, "B");
 }
-countBs("Blah Blah Blah")*/
+countBs("Blah Blah Blah")
 
 ///////////////////////////////////
 
@@ -68,13 +68,34 @@ for ( var i = sequence.length; i <= 10; i++) {
 console.log (sequence)
 
 ////////////////////////////
+
 // factorial lab
 factorial = function (number) {
   if (number === 0) {
     return 1;
   }
   else{
-    return number *= factorial(number-1)
-  }
+    return number *= factorial(number-1);
+  } 
+  number (5)
+  console.log (factorial)
 }
 
+//////////////////////////////////////////////////
+
+var fibo = function (num) {
+if (num === 0) return 0;
+if (num === 1) return 1;
+return fibo (num - 1) + fibo (num - 2)
+}
+var fibonacci =function (N) {
+	for (i=1; i<=N; i++) {
+		console.log (fibo (i))
+	}
+}
+fibo (4)
+////////////////////////////////////////
+
+  
+   
+    
