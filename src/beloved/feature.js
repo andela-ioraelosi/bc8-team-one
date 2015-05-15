@@ -29,11 +29,11 @@ binaryConverter (5)
 
 var countBs = function (count) {
 	var num = 0;
-	for ( var i = 0; i < count.length; i++) {
+	for ( var i = 0; i < count.length; i++); {
 		if (count.charAt(i) === "B") {
-			num ++
+			num ++;
 		}
-		concole.log (num)
+		concole.log (num);
 	}
 countBs ("Blah Blah Blah")
 }
@@ -41,12 +41,12 @@ countBs ("Blah Blah Blah")
 character that is to be counted (rather than counting only uppercase "B" characters) rewrute countBs to make use of this new*/
 
 var countChar = function ( count , testCharacter) {
-	var number = 0
+	var number = 0;
 	for (var i = 0; i < count.length; i++){
 		if (count.charAt(i) === testCharacter){
 			number ++;
 		}
-	} console.log(number)
+	} console.log(number);
 }
 countChar("Blah Blah Blah" , "a");
 
@@ -63,14 +63,14 @@ var sequence = [];
 sequence [0] = 2
 sequence [1] = 3
 for ( var i = sequence.length; i <= 10; i++) {
-	sequence[i] = sequence[i-2] + sequence [i-1]
+	sequence[i] = sequence[i-2] + sequence [i-1];
 }
 console.log (sequence)
 
 ////////////////////////////
 
 // factorial lab
-factorial = function (number) {
+var factorial = function (number) {
   if (number === 0) {
     return 1;
   }
@@ -78,7 +78,7 @@ factorial = function (number) {
     return number *= factorial(number-1);
   } 
   number (5)
-  console.log (factorial)
+  console.log (factorial);
 }
 
 //////////////////////////////////////////////////
@@ -90,12 +90,12 @@ return fibo (num - 1) + fibo (num - 2)
 }
 var fibonacci =function (N) {
 	for (i=1; i<=N; i++) {
-		console.log (fibo (i))
+		console.log (fibo (i));
 	}
 }
 fibo (4)
 ////////////////////////////////////////
 
   
-   
+
     
