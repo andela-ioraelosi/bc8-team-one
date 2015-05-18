@@ -66,7 +66,7 @@ var countBs = function(string){
 	return countChar(string, 'B');
 };
 
-console.log(countBs('Bobo'));
+//console.log(countBs('Bobo'));
 
 
 
@@ -79,7 +79,7 @@ var factorial = function(num){
 	else return num*= factorial(num - 1);
 };
 
-console.log(factorial(5));
+//console.log(factorial(5));
 
 
 
@@ -102,8 +102,48 @@ var fibonacci = function(n){
   }
 };
 
+console.log(fibonacci(100));
 
-console.time('fib run time');
-console.log(fibonacci(1));
 
-console.timeEnd('fib run time');
+// MODEL FOR A FOOTBALL KICK IN A GAME (TOO BASIC);
+
+var Kick = function(Player, direction) {
+  this.power = Player.kickPower();
+  this.direction = direction; // direction is y direction;
+  this.ballMovement = function () {
+    // assuming distance is a direct coefficient of the distance
+    var distance = this.power * this.direction;
+    return distance;
+  }
+};
+
+var Player = function(lFootPower, rFootPower) {
+  this.lFootPower = lFootPower;
+  this.rFootPower = rFootPower;
+  this.power = 0;
+  this.kickPower = function () {
+    var footSelect = Math.floor(Math.random() * 2);
+    if(footSelect===1) this.power = this.lFootPower;
+    else this.power = this.rFootPower;
+    return this.power;
+  }
+};
+
+// assumption is that the direction is only on a single plane (x plane) (for simplicity for now)
+/*var Direction = function(x) {
+  this.directionX = x;
+  
+  function getDirection() {
+
+  }
+  
+}
+*/
+
+var player = new Player(7, 3);
+var kick = new Kick (player, 2);
+
+console.log(kick.ballMovement());
+
+
+// 
