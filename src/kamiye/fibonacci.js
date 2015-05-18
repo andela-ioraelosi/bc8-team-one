@@ -25,9 +25,9 @@ var numberOfSequence = function(n){
 		return sequence;
 	}
 	
-}
+};
 
-console.log(numberOfSequence(8));
+//console.log(numberOfSequence(8));
 
 // Question: write a program to produce the sequence 2,3,5,8,13,21,34,...
 
@@ -46,7 +46,33 @@ var fibo = function(num){
 		sequence.push(n);
 	}
 	return sequence;
-}
+};
 
-console.log(fibo(8));
+//console.log(fibo(8));
 
+
+//QUESTION: REWRITE FIBONACCI FUNCTION WITH CACHED RESULTS
+
+
+var cache = {};
+var fibonacci = function(n){
+
+	//Base cases to build the sequence
+	if (n === 0) return 0;
+	if (n === 1) return 1;
+	else
+	{
+		if(n in cache) return cache[n];
+		else
+		{
+			cache[n] = fibonacci(n-1)+fibonacci(n-2);
+			return cache[n];
+		}
+	}
+};
+
+
+console.time('fib run time');
+console.log(fibonacci(1));
+
+console.timeEnd('fib run time');

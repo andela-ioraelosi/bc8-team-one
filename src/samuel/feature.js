@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 console.log("Awolumate Samuel");
 console.log("I am ThirdSamuel");
 
@@ -123,3 +124,18 @@ function factorial(n)
 
 
 // I HOPE THIS CODES ARE BETTER SCRIPTED COMPARE TO THAT OF YESTERDAY?
+=======
+console.log("Awolumate Samuel");
+console.log("I am ThirdSamuel");
+
+/*14 - number
+-80 - number
+8.5 - number
+true - boolean
+(5 < 7) - boolean
+null - unidentified
+3.142 - number
+"pi" - string
+67 + 18 - number
+*/
+>>>>>>> c8029395ecc693fa6a908580d22e6f802cdd5438

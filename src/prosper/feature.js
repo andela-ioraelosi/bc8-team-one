@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** 
 Activity one (data types)
 --------------------------
@@ -71,3 +72,6 @@ var countChar = function(word, character) {
 var countBs2 = function(word) {
 	return countChar(word, "B");										//call the function "countChar" with string "B" as the second input
 }
+=======
+console.log("Prosper")
+>>>>>>> c8029395ecc693fa6a908580d22e6f802cdd5438
