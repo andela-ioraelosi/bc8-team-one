@@ -34,7 +34,7 @@ var binaryConverter = function(number){
 	} while (number >= 1 )
 
 	return console.log(reverseBinary.reverse().join(''));
-}
+};
 
 //binaryConverter(50);
 
@@ -59,27 +59,51 @@ var countChar = function(string, testChar){
 		}
 	}
 	return numberOfChars;
-}
+};
 
 // NEW COUNT B FUNCTION
 var countBs = function(string){
 	return countChar(string, 'B');
-}
+};
 
 console.log(countBs('Bobo'));
 
 
 
-
+// QUESTION: USE RECURSION TO SOLVE FOR A FACTORIAL
 
 
 var factorial = function(num){
 	console.log(num);
 	if(num===0) return 1;
 	else return num*= factorial(num - 1);
-}
+};
 
 console.log(factorial(5));
 
 
 
+//QUESTION: REWRITE FIBONACCI FUNCTION WITH CACHED RESULTS
+
+var cache = {};
+var fibonacci = function(n){
+
+  //Base cases to build the sequence
+  if (n === 0) return 0;
+  if (n === 1) return 1;
+  else
+  {
+    if(n in cache) return cache[n];
+    else
+    {
+      cache[n] = fibonacci(n-1)+fibonacci(n-2);
+      return cache[n];
+    }
+  }
+};
+
+
+console.time('fib run time');
+console.log(fibonacci(1));
+
+console.timeEnd('fib run time');
