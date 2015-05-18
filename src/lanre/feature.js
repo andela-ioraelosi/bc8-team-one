@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  console.log("Adebayo olanrewaju");
 
 
@@ -96,3 +97,7 @@ null = undefined
          return number * factorial(number - 1);
      }
  }
+=======
+
+ console.log("Adebayo olanrewaju");
+>>>>>>> c8029395ecc693fa6a908580d22e6f802cdd5438
