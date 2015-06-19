@@ -71,3 +71,38 @@ var countChar = function(word, character) {
 var countBs2 = function(word) {
 	return countChar(word, "B");										//call the function "countChar" with string "B" as the second input
 }
+
+
+var fiboSequence = function(number) {
+
+	var i = 0;
+	var result = [2, 3]; 
+	
+	while (i < number- 2) {
+
+		var len = result.length;
+		x = len - 2;
+		y = len - 1; 
+
+		result.push(result[x] + result[y])
+
+		i++
+	}
+
+	return result;
+};
+
+var factorial = function(number) {
+
+	var result = 1;
+
+	while (number > 0) {
+
+		result *= number;
+		number--;
+		factorial(number);
+
+	}
+
+	return result;
+}
