@@ -65,37 +65,3 @@ return result
 console.log(seq(5));
 */
 
-///fibonacci activity corrected//
-var fib = function(num){
-	var seq = [];
-	var p = 1;
-	var c = 1;
-	var n;
-  for(var i = 0; i < num; i++ )
-	{
-		n = p+c;
-		p = c;
-		c = n;
-		seq.push(n);
-	}
-	return seq;
-}
-
-console.log(fib(12));
-
-	// factorial recursion exercise//
-var factorial = function(numb) {
-
-	var result = 1;
-
-	while (numb > 0) {
-
-		result *= numb;
-		numb--;
-		factorial(numb);
-
-	}
-
-	return result;
-}
-
